@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/relative"
+    android:background="@drawable/basketballwallpaper2">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.BasketballScorer.BasketballScorer.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:orientation="horizontal"
+    >
+
+
+ <!--   //layout for team A-->
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:layout_weight="1"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="65dp"
+        android:text="Team A"
+        android:layout_gravity="center"
+        android:id="@+id/teamname"
+        android:singleLine="true"
+        android:textColor="#FFFFF1"
+        android:layout_weight="1"
+        android:maxLength="12"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:id="@+id/scoretext"
+        android:textSize="40sp"
+        android:textColor="#FFFFF1"
+android:fontFamily=" sans-serif-medium"
+        />
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="3points"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:onClick="triplepointer"
+        android:textColor="#FFFFF1"
+    />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2points"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:onClick="doublePointer"
+        android:textColor="#FFFFF1"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Free THrow"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:onClick="freeThrow"
+        android:textColor="#FFFFF1"
+        />
+</LinearLayout>
+
+    <!--for inserting a line in between the two teams-->
+    <LinearLayout
+        android:layout_width="1dip"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:divider="?android:dividerHorizontal"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:background="#111"
+        />
+
+
+
+    <!--layout for teamB-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="65dp"
+            android:text="Team B"
+            android:layout_gravity="center"
+            android:id="@+id/TeamB"
+            android:singleLine="true"
+            android:textColor="#FFFFF1"
+            android:layout_weight="1"
+            android:maxLength="12"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:id="@+id/scoreB"
+            android:textSize="40sp"
+            android:textColor="#FFFFF1"            android:fontFamily=" sans-serif-medium"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3points"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:onClick="triplepoint"
+            android:textColor="#FFFFF1"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2points"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:onClick="doublePoint"
+            android:textColor="#FFFFF1"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Free THrow"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:onClick="free"
+            android:textColor="#FFFFF1"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/resetbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="Finish game"
+        android:onClick="Submit"
+        android:textColor="#FFFFF1"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="reset"
+        android:onClick="reset"
+        android:layout_marginBottom="32dp"
+        android:id="@+id/resetbutton"
+        android:textColor="#FFFFF1"
+        />
+/</RelativeLayout>

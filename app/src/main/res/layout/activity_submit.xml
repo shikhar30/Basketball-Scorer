@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.shikhar.basketballscorer.Submit"
+    android:background="#ABBF98">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Congratulations"
+        android:textSize="50dp"
+        android:fontFamily="cursive"
+        android:textAlignment="center"
+        android:textColor="#111"
+        />
+
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#111"
+        android:layout_marginTop="70dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Winner"
+            android:layout_marginTop="80dp"
+            android:textSize="35dp"
+            android:text="WINNER"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#111"
+        android:layout_marginTop="140dp"/>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="150dp"
+     android:orientation="horizontal"
+     >
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Team A"
+         android:layout_weight="1"
+         android:textSize="20dp"
+         android:textColor="#111"
+         android:textAlignment="center"
+         android:id="@+id/submit_teamA"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Team B"
+        android:id="@+id/submit_teamB"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:textColor="#111"
+        android:textAlignment="center"/>
+
+ </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#111"
+        android:layout_marginTop="180dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:id="@+id/relativeLayout">
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="30dp"
+
+            >
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Three Pointer"
+                android:id="@+id/ThreePointer_teamA"
+                android:paddingRight="13dp"
+                android:textSize="20sp"
+                android:textColor="#111"
+                android:layout_column="0"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="5"
+                android:textSize="20sp"
+                android:textColor="#111"
+                android:id="@+id/ThreePointer_teamAscore"
+                android:layout_column="7"
+                android:paddingRight="40dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Three Pointer"
+                android:id="@+id/ThreePointer_teamB"
+                android:textSize="20sp"
+                android:textColor="#111"
+                android:layout_column="14"
+                android:paddingRight="13dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="7"
+                android:textSize="20dp"
+                android:textColor="#111"
+                android:id="@+id/ThreePointer_teamBscore"
+                android:layout_column="15" />
+        </TableRow>
+
+
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="30dp">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Two pointer"
+                android:id="@+id/TwoPointer_teamA"
+                android:layout_column="0"
+                android:textSize="20dp"
+                android:textColor="#111"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="6"
+                android:id="@+id/TwoPointer_teamAscore"
+                android:layout_column="7"
+                android:textSize="20dp"
+                android:textColor="#111"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Two Pointer"
+                android:id="@+id/TwoPointer_teamB"
+                android:layout_column="14"
+                android:textSize="20dp"
+                android:textColor="#111"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="11"
+                android:id="@+id/TwoPointer_teamBscore"
+                android:layout_column="15"
+                android:textSize="20dp"
+                android:textColor="#111"/>
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="30dp">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Free Throw"
+                android:id="@+id/FreeThrow_teamA"
+                android:layout_column="0"
+                android:textSize="20dp"
+                android:textColor="#111"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="9"
+                android:id="@+id/FreeThrow_teamAscore"
+                android:layout_column="7"
+                android:textSize="20dp"
+                android:textColor="#111"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Free Throw"
+                android:id="@+id/textView10"
+                android:layout_column="14"
+                android:textSize="20dp"
+                android:textColor="#111"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="42"
+                android:id="@+id/FreeThrow_teamBscore"
+                android:layout_column="15"
+                android:textSize="20dp"
+                android:textColor="#111"/>
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:id="@+id/relativeLayout1">
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#111"
+        android:layout_marginTop="380dp"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="TOTAL----"
+                android:id="@+id/textView"
+                android:layout_column="0"
+                android:textSize="20sp"
+                android:textColor="#111"
+                android:paddingRight="40dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="67"
+                android:id="@+id/submit_totalscoreteamA"
+                android:layout_column="7"
+                android:textSize="20sp"
+                android:textColor="#111"
+                android:paddingRight="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="TOTAL---"
+                android:id="@+id/textView3"
+                android:layout_column="14"
+                android:textSize="20sp"
+                android:textColor="#111"
+                android:paddingRight="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="56"
+                android:id="@+id/submit_totalscoreteamB"
+                android:layout_column="15"
+                android:textSize="20sp"
+                android:textColor="#111"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+</RelativeLayout>

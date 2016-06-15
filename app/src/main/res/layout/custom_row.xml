@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal">
+</LinearLayout>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative"
+    android:fadeScrollbars="true"
+
+    android:layout_marginBottom="40dp"
+    android:background="#FFCF66"
+    >
+
+
+  <TableLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:stretchColumns="*"
+      android:divider="#111"
+      android:showDividers="middle"
+      android:background="@drawable/cell_shape"
+      android:orientation="vertical"
+      >
+      <TableRow android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/cell_shape"
+
+          >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/TeamAB"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:textColor="#111"
+        android:textSize="28dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/teamBA"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textColor="#111"
+        android:textSize="28dp"
+        />
+      </TableRow>
+<TableRow
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:textAlignment="center"
+
+   >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/scoreAB"
+        android:textColor="#111"
+      android:layout_weight="1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="center"
+        android:textSize="23dp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/scoreBA"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="center"
+        android:textSize="23dp"
+        android:textColor="#111"
+        />
+</TableRow>
+  </TableLayout>
+
+</RelativeLayout>
+</RelativeLayout>
