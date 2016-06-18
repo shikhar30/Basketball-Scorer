@@ -5,9 +5,9 @@
 
     <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Primary theme color of the app (sets background color of app bar) -->
-        <item name="colorPrimary">#C00F9F</item>
+        <item name="colorPrimary">#ff8800</item>
         <!-- Background color of buttons in the app -->
-        <item name="colorButtonNormal">#C00F8F</item>
+        <item name="colorButtonNormal">#ff8800</item>
     </style>
 
     <style name="AppTheme.NoActionBar">

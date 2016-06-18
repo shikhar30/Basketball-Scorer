@@ -5,7 +5,7 @@
     <item android:id="@+id/History"
         android:orderInCategory="1"
         android:title="History"
-        android:showAsAction="never" />
+        android:showAsAction="always" />
 
     <!--<item
         android:id="@+id/action_settings"

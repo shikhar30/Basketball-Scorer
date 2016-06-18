@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.shikhar.basketballscorer.Submit"
-    android:background="#ABBF98">
+    android:background="@drawable/court1">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -39,8 +39,9 @@
             android:id="@+id/Winner"
             android:layout_marginTop="80dp"
             android:textSize="35dp"
-            android:text="WINNER"
-            android:textAlignment="center"/>
+            android:hint="WINNER"
+            android:textAlignment="center"
+            />
     </LinearLayout>
 
 
